@@ -66,7 +66,8 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Adapative Layout */
+
 .container {
 	width: 1000px;
 	margin: auto;
@@ -74,12 +75,26 @@ h1, h2, h3, h4, h5 {
 	padding-right: 30px;
 }
 
+/* 800px Breakpoint for Tablet View */
+
+@media( max-width: 800px) {
+    .container {
+        width: 800px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
 header {
 	border-bottom: 1px solid black;
 }
 
  header nav {
-	display: inline-block;
+	/* display: inline-block; */
 
 }
 
@@ -152,6 +167,14 @@ footer {
     margin-right: auto;
     width: 100%;
 }
+
 /* testing */
 
-User_Interface_III
+/* 800px Breakpoint for Tablet View */
+
+/* @media( max-width: 800px) {
+    .container {
+        width: 800px;
+
+    }
+} */
