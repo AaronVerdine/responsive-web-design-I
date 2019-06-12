@@ -2,8 +2,8 @@
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -19,162 +19,199 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+margin-bottom: 15px;
 }
 
 /* Adapative Layout */
 
 .container {
-	width: 1000px;
-	margin: auto;
-	padding-left: 50px;
-	padding-right: 30px;
+width: 1000px;
+margin: auto;
+padding-left: 50px;
+padding-right: 30px;
 }
 
-/* 800px Breakpoint for Tablet View */
-
-@media( max-width: 800px) {
-    .container {
-        width: 800px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-}
 
 
 header {
-	border-bottom: 1px solid black;
+border-bottom: 1px solid black;
 }
 
- header nav {
-	/* display: inline-block; */
+header nav {
+display: inline-block;
 
 }
 
-header nav a {
-	margin-left: 50px;
-	text-decoration: none;
-	color: grey;
-	
+.nav-menu a {
+margin-left: 50px;
+text-decoration: none;
+color: grey;
+
 }
 
 .logo {
-	margin-left: 60px;
+margin-left: 60px;
+
 }
 
 h1 {
-	text-align: center;
-	font-size: 85px;
-	margin-top: 140px;
-	padding-right: 300px;
+text-align: center;
+font-size: 85px;
+margin-top: 140px;
+padding-right: 300px;
 }
 
 button {
-	width: 170px;
-    height: 40px;
-    border-color: black;
-    font: 400 16px system-ui;
-    margin-left: 210px;
+width: 170px;
+height: 40px;
+border-color: black;
+font: 400 16px system-ui;
+margin-left: 210px;
 }
 
 .snippet {
-	display: block;
-	margin-top: -380px;
-	margin-left: auto;
-	margin-right: 10px;
-	margin-bottom: 70px;
+display: block;
+margin-top: -380px;
+margin-left: auto;
+margin-right: 10px;
+margin-bottom: 70px;
 }
 
 section1 {
-	display: inline-block;
-	column-count: 2;
-	padding-top: 40px;
-	padding-bottom: 40px;
+display: inline-block;
+column-count: 2;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
 section2 {
-	display: inline-block;
-    column-count: 3;
-    padding-top: 40px;
-	padding-bottom: 40px;
-	border-bottom: 1px solid black;
+display: inline-block;
+column-count: 3;
+padding-top: 40px;
+padding-bottom: 40px;
+border-bottom: 1px solid black;
 }
 
 section3 h4 {
-	padding-top: 40px;
+padding-top: 40px;
 }
 
 p {
-	width: 90%;
+width: 90%;
 }
 
 footer {
-	text-align: center;
-	font-size: 15px;
-	padding-top: 80px;
+text-align: center;
+font-size: 15px;
+padding-top: 80px;
 }
 
 .middle-img {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
 }
 
 /* testing */
 
 /* 800px Breakpoint for Tablet View */
 
-/* @media( max-width: 800px) {
-    .container {
-        width: 800px;
+@media( max-width: 800px) {
+.container {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 
-    }
-} */
+ header {
+    padding-bottom: 10%;
+    border-bottom: 2px solid black;
+ }
+
+.nav-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-bottom: -10%;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+h1 {
+    width: 80%;
+    margin-left: 30%;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 15%;
+    padding-top: 0%;
+    margin-bottom: -80px;
+}
+
+.snippet {
+    display: none;
+}
+
+button {
+    width: 170px;
+    height: 40px;
+    border-color: black;
+    font: 400 16px system-ui;
+    margin-left: 280px;
+}
+}
+
